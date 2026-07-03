@@ -18,7 +18,40 @@
   </ul>
 </nav>
 
-  <!-- Sidans innehåll kommer här -->
+<section class="hero">
+  <img src="images/hero.jpg" alt="Bil som tvättas" class="hero-image">
+  <div class="hero-text">
+    <h1>Boka din tid</h1>
+    <a href="#kalender" class="cta-button">Boka tid</a>
+  </div>
+</section>
+
+<section id="kalender" class="calendar-section">
+  <h2>Välj en ledig tid</h2>
+  <!-- Kalendern byggs här senare med JavaScript -->
+</section>
+
+<section id="kalender" class="calendar-section">
+
+  <!-- Tiderna renderas här av JavaScript -->
+</section>
+
+<section id="bokningsformular" class="booking-form-section" style="display: none;">
+  <h2>Dina uppgifter</h2>
+  <p>Vald tid: <span id="vald-tid-text"></span></p>
+  <form id="bokning-form">
+    <label for="namn">Namn</label>
+    <input type="text" id="namn" required>
+
+    <label for="telefon">Telefonnummer</label>
+    <input type="tel" id="telefon" required>
+
+    <label for="biltyp">Bilmodell</label>
+    <input type="text" id="biltyp" required>
+
+    <button type="submit" class="cta-button">Bekräfta bokning</button>
+  </form>
+</section>
 
   <script src="script.js"></script>
 </body>

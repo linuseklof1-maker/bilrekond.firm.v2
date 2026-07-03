@@ -85,3 +85,62 @@ body {
   margin-top: 1.5rem;
   display: inline-block;
 }
+
+.calendar-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.tid-knapp {
+  padding: 1rem 1.5rem;
+  margin: 0.5rem;
+  border: 2px solid #0B3D6E;
+  border-radius: 6px;
+  background-color: white;
+  color: #0B3D6E;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.tid-knapp:hover {
+  background-color: #2E86DE;
+  color: white;
+}
+
+.tid-knapp.upptagen {
+  background-color: #ddd;
+  color: #888;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.tid-knapp.vald {
+  background-color: #0B3D6E;
+  color: white;
+  border-color: #0B3D6E;
+}
+
+.booking-form-section {
+  padding: 2rem;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.booking-form-section label {
+  display: block;
+  margin-top: 1rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+.booking-form-section input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
