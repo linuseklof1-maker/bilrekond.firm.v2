@@ -144,3 +144,119 @@ html {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+.price-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.price-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto 0;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.price-table th {
+  background-color: #0B3D6E;
+  color: white;
+  padding: 1rem;
+  text-align: left;
+}
+
+.price-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.price-table tr:last-child td {
+  border-bottom: none;
+}
+
+.price-table tr:hover td {
+  background-color: #F7FAFC;
+}
+
+.hero-title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero-title-link:hover {
+  text-decoration: underline;
+}
+
+.om-oss-section {
+  padding: 4rem 2rem;
+}
+
+.om-oss-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.om-oss-bild {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.om-oss-text h2 {
+  color: #0B3D6E;
+  margin-bottom: 1rem;
+}
+
+.om-oss-text p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.kontakt-section {
+  padding: 4rem 2rem;
+}
+
+.kontakt-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.kontakt-form-wrapper h2 {
+  color: #0B3D6E;
+  margin-bottom: 1rem;
+}
+
+#kontakt-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#kontakt-form input,
+#kontakt-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
+
+.felmeddelande {
+  color: #e63946;
+  font-size: 0.875rem;
+  display: block;
+  min-height: 1.2rem;
+}
+
+.karta-wrapper {
+  min-height: 350px;
+}

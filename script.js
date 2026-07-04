@@ -99,3 +99,25 @@ function gomFormular() {
   bokningForm.reset();
   valdTid = null;
 }
+
+const epostInput = document.getElementById("k-epost");
+const epostFel = document.getElementById("epost-fel");
+
+epostInput.addEventListener("input", function() {
+  const epost = epostInput.value;
+  const giltig = epost.includes("@") && epost.includes(".");
+
+  if (epost.length > 0 && !giltig) {
+    epostFel.textContent = "Ange en giltig e-postadress";
+  } else {
+    epostFel.textContent = "";
+  }
+});
+
+const kontaktForm = document.getElementById("kontakt-form");
+kontaktForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+  alert("Tack för ditt meddelande! Vi hör av oss snart.");
+  kontaktForm.reset();
+  epostFel.textContent = "";
+});
